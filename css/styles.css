@@ -90,6 +90,7 @@ img	{
 /* CONTAINER */
 .container	{
 	display: flex;
+	height: 640px;
 	max-width: 1192px;
 	width: 100%;
 	padding-left: 20px;
@@ -104,13 +105,12 @@ img	{
 	padding-bottom: 80px;
 }
 
-.intro-page {
-	display: flex;
-}
 
 
 /* HERO */
 .hero {
+	display: flex;
+	flex-direction: column;
 	--text-color: #fff;
 width: 100%;
 max-width: 570px;
