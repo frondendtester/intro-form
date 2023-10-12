@@ -1,0 +1,399 @@
+/* CUSTOM PROPS */
+:root	{
+	--accent-color: #EA625C ;
+	--font-family: "Roboto","Arial", sans-serif;
+	--text-color: #333 ;
+}
+
+/* GLOBAL */
+html	{
+	box-sizing: border-box;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after	{
+	box-sizing: inherit;
+}
+
+
+body	{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: var(--font-family);
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #fff;
+	color: var(--text-color);
+}
+
+img	{
+	max-width: 100%;
+	height: auto;
+}
+
+/* OUTLINE STYLE */
+*:focus	{
+	outline: 2px dashed skyblue;
+	outline-offset: 3px;
+}
+
+
+/* CONTAINER */
+.container	{
+	max-width: 1100px;
+	width: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-header {
+	padding-top: 30px;
+	padding-bottom: 79.46;
+	background-color: #fff;
+}
+
+.site-header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.logo-link {
+	display: block;
+}
+
+.logo-img {
+	padding-top: 30px;
+	padding-bottom: 170.46;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-header-actions {
+	display: flex;
+	align-items: center;
+}
+
+/* SITENAV */
+.sitenav-list {
+	padding: 0;
+	margin: 0;
+	margin-right: 30px;
+	display: flex;
+	list-style: none;
+
+}
+
+.sitenav-item:not(:last-child)	{
+	margin-right: 30px;
+}
+
+.sitenav-link {
+	color: #333;
+	text-align: center;
+	font-family: var(--font-family);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+/* MAIN-LINK */
+.main-link	{
+	justify-content: center;
+	align-items: center;
+	width: 260px;
+	height: 51px;
+	text-align: center;
+	font-family: var(--font-family);
+	font-size: 18px;
+	line-height: 15px;
+	font-weight: 700;
+	color: #fff;
+	background-color: var(--accent-color);
+	text-decoration: none;
+	text-transform: uppercase;
+	font-style: normal;
+}
+
+.hero-heading	{
+	font-family: var(--font-family);
+	width: 339px;
+	font-size: 40px;
+	font-style: 40px;
+	line-height: 1.2;
+}
+
+
+/* HERO */
+.hero {
+	padding-top: 183px;
+	padding-bottom: 170.46px;
+	color: #000;
+}
+
+.hero-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.hero-content {
+	width: 490px;
+	margin-right: 245px;
+}
+
+.hero-heading {
+	text-align: center;
+	margin-top: 170.46;
+	margin-bottom: 30px;
+	color: #000;
+	font-family: var(--font-family);
+	font-weight: 700;
+	line-height: 1.2;
+	font-size: 50px;
+	font-style: normal;
+}
+
+.hero-text {
+	margin-top: 0px;
+	margin-bottom: 30px;
+	width: 450px;
+	height: 120px;
+	color: #777;
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+}
+
+
+.hero-img {
+	width: 587px;
+	height: 565px;
+	flex-shrink: 0;
+	background-image: url("../img/watches.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center	center;
+}
+
+
+/* FEATURES */
+.features {
+padding-top: 70px;
+padding-bottom: 70px;
+color: #000;
+}
+
+
+.features-list {
+	display: flex;
+justify-content: space-between;
+text-decoration: none;
+list-style: none;
+}
+
+.feature {
+flex-direction: column;
+
+}
+
+
+.feature-title {
+text-align: center;
+margin-bottom: 30px;
+color: #000;
+font-family: var(--font-family);
+font-weight: 700;
+line-height: 1.5;
+font-size: 18px;
+font-style: normal;
+}
+
+
+.feature-info {
+margin-top: 0;
+margin-bottom: 20px;
+color: #777;
+font-family: var(--font-family);
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.6;
+}
+
+
+
+.feature-hr-and-text	{
+	display: flex;
+	align-items: center;
+margin-right: 0;
+}
+
+
+
+.feature-hr {
+	width: 40px;
+	height: 3px;
+	background-color: var(--accent-color);
+margin: 0;
+}
+
+.feature-hr-text {
+padding-left: 10px;
+color: var(--accent-color);
+font-family: var(--font-family);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 1.6%;
+text-transform: uppercase;
+}
+
+
+/* PROMO */
+.promo {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	color: #000;
+}
+
+.promo-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.promo-content {
+	width: 490px;
+}
+
+.container	{
+	padding-right: 110px;
+}
+
+.promo-heading {
+	text-align: center;
+  margin-bottom: 30px;
+	color: #000;
+	font-family: var(--font-family);
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+
+.promo-text {
+margin-bottom: 30px;
+margin-left: 40px;
+	color: #777;
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.promo-img {
+	width: 400px;
+	height: 599.927px;
+	flex-shrink: 0;
+	background-image: url("../img/qo\'lda\ soat\ ko\'ryapti.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center	center;
+}
+
+
+
+/* AKSIYA */
+.aksiya {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+	background-image: url("../img/runners\ 1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.aksiya-inner- {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 635px;
+	margin-bottom: 239.19px;
+	margin-right: 125px;
+}
+
+.container-aksiya {
+width: 490px;
+display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+
+.aksiya-content- {
+		text-align: center;
+		margin-bottom: 30px;
+		color: #fff;
+		font-family: var(--font-family);
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 1.2;
+	}
+
+.aksiya-heading {
+	margin-top: 240px;
+	text-align: center;
+	margin-bottom: 30px;
+	color: #fff;
+	font-family: var(--font-family);
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+
+.aksiya-text {
+	margin-top: 0;
+	margin-bottom: 30px;
+	color: #FFF;
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+/* RETINA BG */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+	.aksiya	{
+		background-image: url("../img/runners\ 1@2x.jpg");
+	}
+
+}
