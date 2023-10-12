@@ -79,15 +79,17 @@ img	{
 	height: auto;
 }
 
+
 /* OUTLINE STYLE */
 *:focus	{
-	outline: 2px dashed skyblue;
+	outline: 2px dotted var(--purple);
 	outline-offset: 3px;
 }
 
 
 /* CONTAINER */
 .container	{
+	display: flex;
 	max-width: 1192px;
 	width: 100%;
 	padding-left: 20px;
@@ -103,13 +105,13 @@ img	{
 }
 
 .intro-page {
-display: flex;
+	display: flex;
 }
 
+
+/* HERO */
 .hero {
 	--text-color: #fff;
-	flex-direction: column;
-	align-items: flex-start;
 width: 100%;
 max-width: 570px;
 border-radius: 20px;
@@ -161,11 +163,72 @@ text-align: center;
 }
 
 
+/* SIGNUP-FORM */
+.signup-form {
+	width: 100%;
+	max-width: 570px;
+	margin-left: 12px;
+	padding: 55px 60px 40px;
+border-radius: 20px;
+overflow: hidden;
+background-color: #fff;
+}
 
+.signup-form-heading {
+margin-top: 0;
+margin-bottom: 65px;
+font-size: 32px;
+line-height: 42px;
+font-weight: 600;
+}
 
+.signup-form-fields {
+display: flex;
+flex-direction: column;
+margin-bottom: 65px;
+}
 
+.signup-form-filed {
+padding-top: 15px;
+padding-bottom: 14px;
+border: 0;
+border-bottom: 1px	solid	#555;
+color: #555;
+}
 
+.signup-form-filed:focus	{
+border-color: #000;
+color: #000;
+font-weight: 600;
+}
 
+.signup-form-filed:not(:last-child)	{
+	margin-bottom: 20px;
+}
+
+.signup-form-submit {
+display: block;
+width: 100%;
+padding: 20px;
+font-weight: 600;
+border: 0;
+margin-bottom: 8px;
+border-radius: 10px;
+background-color: var(--purple);
+color: #fff;
+cursor: pointer;
+}
+
+.signup-form-notice {
+font-size: 11px;
+line-height: 15px;
+text-align: center;
+}
+
+.signup-form-notice-link {
+	font-weight: 500;
+	color: var(--red);
+}
 
 
 
@@ -179,7 +242,6 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 	.aksiya	{
-		background-image: url("../img/runners\ 1@2x.jpg");
+		background-image: url("../img/Rectangle\ 6@2x.jpg");
 	}
-
 }
