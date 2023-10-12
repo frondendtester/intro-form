@@ -1,8 +1,10 @@
 /* CUSTOM PROPS */
 :root	{
-	--accent-color: #EA625C ;
-	--font-family: "Roboto","Arial", sans-serif;
-	--text-color: #333 ;
+	--body-bg: #f1f4ff ;
+	--green: #4dc490 ;
+	--purple: #655af2 ;
+	--red: #f03535 ;
+	--text-color: #000 ;
 }
 
 /* GLOBAL */
@@ -25,7 +27,7 @@ body	{
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	font-family: var(--font-family);
+	font-family: "Arial", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: #fff;
