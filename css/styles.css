@@ -82,7 +82,7 @@ img	{
 
 /* OUTLINE STYLE */
 *:focus	{
-	outline: 2px dotted var(--purple);
+	outline: 1px solid var(--purple);
 	outline-offset: 3px;
 }
 
@@ -162,6 +162,15 @@ font-size: 19px;
 text-align: center;
 }
 
+.hero-bottom:hover	{
+	opacity: 0.8;
+}
+
+.hero-bottom:active	{
+	opacity: 0.6;
+}
+
+
 
 /* SIGNUP-FORM */
 .signup-form {
@@ -218,6 +227,15 @@ background-color: var(--purple);
 color: #fff;
 cursor: pointer;
 }
+
+.signup-form-submit:hover	{
+	opacity: 0.8;
+}
+
+.signup-form-submit:active	{
+	opacity: 0.6;
+}
+
 
 .signup-form-notice {
 font-size: 11px;
